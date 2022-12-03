@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.card__container {
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 450px;
+  background: #ffffff;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+  border-radius: 20px;
+}
+
+.inner__content {
+  text-align: center;
+  padding: 48px;
+}
+
+.title__text {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 37px;
+  text-align: center;
+  color: #1f2e55;
+}
+
+.paragraph__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #717fa6;
+  margin: 17px 0 20px;
+}
+
+.music__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  width: 354px;
+  background: #f7f9ff;
+  border-radius: 11px;
+  margin-bottom: 32px;
+}
+
+.icon__title-flex {
+  display: flex;
+  align-items: center;
+}
+
+.plan__title {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.plan__title h5 {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #1f2e55;
+}
+
+.plan__title p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #717fa6;
+  margin: 6px 0;
+}
+
+.change__link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #382ae1;
+  transition: 0.7s;
+}
+
+.change__link:hover {
+  color: #766cf1;
+  text-decoration: none;
+}
+
+.payment__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pay__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 354px;
+  height: 50px;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #382ae1;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  border-radius: 11px;
+  transition: 0.7s;
+}
+
+.pay__btn:hover {
+  background: #766cf1;
+}
+
+.cancel__btn {
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  color: #717fa6;
+  text-decoration: none;
+  margin: 32px 0 0;
+  transition: 0.5s;
+}
+
+.cancel__btn:hover {
+  color: #1f2e55;
+}
+
+@media only screen and (max-width: 450px) {
+  .card__container {
+    max-width: 87%;
+  }
+
+  .music__container {
+    padding: 13px;
+  }
+}
